@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,264 +11,261 @@
 <style>
 
 :root{
-    --maroon:#6D071A;
-    --red:#C1121F;
-    --gold:#D4A017;
-    --green:#2E8B57;
-    --dark:#0B1020;
-    --white:#F5F5F5;
+--maroon:#6D071A;
+--gold:#D4A017;
+--green:#2E8B57;
+--dark:#0B1020;
+--light:#f8f8f8;
 }
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Segoe UI",sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#f7f7f7;
-    color:#333;
-    line-height:1.6;
+background:#fff;
+color:#333;
+line-height:1.7;
 }
 
-/* NAVIGATION */
-
 nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:var(--maroon);
-    padding:15px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+background:rgba(109,7,26,.95);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.2);
 }
 
 .logo-text{
-    color:white;
-    font-size:1.3rem;
-    font-weight:bold;
+color:white;
+font-weight:700;
+font-size:1.3rem;
 }
 
 nav ul{
-    display:flex;
-    list-style:none;
-    gap:20px;
+display:flex;
+list-style:none;
+gap:25px;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    transition:.3s;
+color:white;
+text-decoration:none;
+font-weight:500;
 }
 
 nav a:hover{
-    color:var(--gold);
+color:var(--gold);
 }
-
-/* HERO */
 
 .hero{
-    min-height:100vh;
-    background:
-    linear-gradient(rgba(109,7,26,.88),
-    rgba(109,7,26,.88));
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:120px 20px 60px;
+height:100vh;
+background:
+linear-gradient(
+rgba(0,0,0,.45),
+rgba(0,0,0,.45)
+),
+url('banner.jpg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
 }
 
-.hero-logo{
-    width:220px;
-    margin-bottom:25px;
+.hero-content{
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(5px);
+padding:40px;
+border-radius:20px;
+max-width:900px;
 }
 
 .hero h1{
-    font-size:4rem;
-    margin-bottom:10px;
+font-size:4rem;
+margin-bottom:15px;
 }
 
 .hero h2{
-    font-size:1.4rem;
-    font-weight:400;
-    margin-bottom:20px;
+color:var(--gold);
+margin-bottom:20px;
 }
 
-.tagline{
-    font-size:1.3rem;
-    color:var(--gold);
-    margin-bottom:30px;
+.hero p{
+font-size:1.2rem;
+margin-bottom:30px;
 }
 
 .btn{
-    display:inline-block;
-    background:var(--gold);
-    color:black;
-    text-decoration:none;
-    padding:14px 28px;
-    border-radius:8px;
-    font-weight:bold;
+display:inline-block;
+padding:14px 30px;
+background:var(--gold);
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+margin:5px;
 }
 
-/* SECTIONS */
+.btn-green{
+background:var(--green);
+color:white;
+}
 
 section{
-    padding:80px 10%;
+padding:90px 10%;
 }
 
 .section-title{
-    text-align:center;
-    color:var(--maroon);
-    margin-bottom:40px;
-    font-size:2.3rem;
+text-align:center;
+font-size:2.5rem;
+color:var(--maroon);
+margin-bottom:50px;
 }
 
 .container{
-    max-width:1200px;
-    margin:auto;
+max-width:1200px;
+margin:auto;
 }
 
 .card{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-/* MISSION VISION */
-
-.grid-3{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
-.mv-card{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-    border-top:6px solid var(--maroon);
+.mvo-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+border-top:5px solid var(--maroon);
 }
 
-.mv-card h3{
-    color:var(--maroon);
-    margin-bottom:15px;
-}
-
-/* STEM PILLARS */
-
-.pillars{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+.mvo-card h3{
+margin-bottom:15px;
+color:var(--maroon);
 }
 
 .pillar{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+text-align:center;
+padding:30px;
+background:white;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .pillar h3{
-    color:var(--maroon);
+color:var(--maroon);
+margin-bottom:10px;
 }
 
-/* OFFICERS */
+.project-card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
 
-.officers{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+.project-card h3{
+color:var(--maroon);
+margin-bottom:10px;
 }
 
 .officer-card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .officer-card h3{
-    color:var(--maroon);
-    margin-bottom:10px;
+color:var(--maroon);
+margin-bottom:10px;
 }
 
-/* RESEARCH */
-
-.research-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-.research-card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+.gallery-item{
+height:220px;
+background:#e6e6e6;
+border-radius:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-weight:bold;
+color:#666;
 }
-
-/* CONTACT */
 
 .contact{
-    text-align:center;
+text-align:center;
 }
 
 .contact a{
-    color:var(--maroon);
-    font-weight:bold;
+color:var(--maroon);
+font-weight:bold;
 }
-
-/* FOOTER */
 
 footer{
-    background:var(--dark);
-    color:white;
-    text-align:center;
-    padding:30px;
+background:var(--dark);
+color:white;
+padding:40px;
+text-align:center;
 }
-
-/* MOBILE */
 
 @media(max-width:768px){
 
-    nav{
-        flex-direction:column;
-        gap:15px;
-        padding:15px;
-    }
+nav{
+flex-direction:column;
+gap:10px;
+}
 
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
 
-    .hero h1{
-        font-size:2.5rem;
-    }
+.hero h1{
+font-size:2.5rem;
+}
 
-    .hero-logo{
-        width:160px;
-    }
+.hero-content{
+padding:25px;
+}
 
 }
 
 </style>
+
 </head>
 
 <body>
@@ -279,25 +278,23 @@ Synapses STEM Club
 
 <ul>
 <li><a href="#about">About</a></li>
-<li><a href="#mission">Mission</a></li>
+<li><a href="#mvo">Mission</a></li>
+<li><a href="#projects">Projects</a></li>
 <li><a href="#officers">Officers</a></li>
-<li><a href="#research">Research</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
 </nav>
 
-<!-- HERO -->
-
 <section class="hero">
 
-<img src="logo.png" alt="Synapses STEM Club Logo" class="hero-logo">
+<div class="hero-content">
 
-<h1>SYNAPSES STEM CLUB</h1>
+<h1>Synapses STEM Club</h1>
 
 <h2>Tanza National Trade School</h2>
 
-<p class="tagline">
+<p>
 Synapses Firing, Minds Inspiring
 </p>
 
@@ -305,22 +302,26 @@ Synapses Firing, Minds Inspiring
 Learn More
 </a>
 
-</section>
+<a href="#contact" class="btn btn-green">
+Join Us
+</a>
 
-<!-- ABOUT -->
+</div>
+
+</section>
 
 <section id="about">
 
 <div class="container">
 
 <h2 class="section-title">
-About the Club
+About Us
 </h2>
 
 <div class="card">
 
 <p>
-The Synapses STEM Club of Tanza National Trade School is a student-led organization committed to promoting excellence in Science, Technology, Engineering, and Mathematics (STEM). Through research, innovation, leadership development, and community engagement, the club provides meaningful opportunities for students to develop critical thinking, creativity, collaboration, and scientific literacy.
+The Synapses STEM Club of Tanza National Trade School is a student-led organization dedicated to promoting excellence in Science, Technology, Engineering, and Mathematics (STEM). Through research, innovation, leadership development, and community engagement, the organization cultivates curiosity, creativity, collaboration, and scientific literacy among learners.
 </p>
 
 </div>
@@ -329,9 +330,7 @@ The Synapses STEM Club of Tanza National Trade School is a student-led organizat
 
 </section>
 
-<!-- MISSION VISION OBJECTIVES -->
-
-<section id="mission">
+<section id="mvo">
 
 <div class="container">
 
@@ -339,39 +338,30 @@ The Synapses STEM Club of Tanza National Trade School is a student-led organizat
 Mission • Vision • Objectives
 </h2>
 
-<div class="grid-3">
+<div class="grid">
 
-<div class="mv-card">
-
+<div class="mvo-card">
 <h3>Mission</h3>
-
 <p>
-Our mission is to inspire and engage young people in the fields of science, technology, engineering, and mathematics (STEM). Through hands-on experiences and meaningful opportunities, we empower students to become future leaders and innovators.
+To inspire and engage young people in STEM through meaningful learning experiences, innovation, and leadership opportunities.
 </p>
-
 </div>
 
-<div class="mv-card">
-
+<div class="mvo-card">
 <h3>Vision</h3>
-
 <p>
-To cultivate a community of STEM enthusiasts who embrace curiosity, innovation, collaboration, and lifelong learning while pursuing excellence in science, technology, engineering, and mathematics.
+To cultivate a community of STEM enthusiasts who embrace curiosity, collaboration, and lifelong learning.
 </p>
-
 </div>
 
-<div class="mv-card">
-
+<div class="mvo-card">
 <h3>Objectives</h3>
-
 <ul>
-<li>Promote academic excellence in STEM fields</li>
+<li>Promote academic excellence in STEM</li>
 <li>Support student research and innovation</li>
-<li>Foster teamwork and leadership</li>
-<li>Engage in outreach and community service</li>
+<li>Develop leadership and teamwork</li>
+<li>Engage in community service</li>
 </ul>
-
 </div>
 
 </div>
@@ -379,8 +369,6 @@ To cultivate a community of STEM enthusiasts who embrace curiosity, innovation, 
 </div>
 
 </section>
-
-<!-- STEM PILLARS -->
 
 <section>
 
@@ -390,11 +378,11 @@ To cultivate a community of STEM enthusiasts who embrace curiosity, innovation, 
 STEM Pillars
 </h2>
 
-<div class="pillars">
+<div class="grid">
 
 <div class="pillar">
 <h3>Science</h3>
-<p>Exploration, discovery, and scientific inquiry.</p>
+<p>Discovery and inquiry.</p>
 </div>
 
 <div class="pillar">
@@ -404,12 +392,12 @@ STEM Pillars
 
 <div class="pillar">
 <h3>Engineering</h3>
-<p>Design thinking and problem-solving.</p>
+<p>Design and problem-solving.</p>
 </div>
 
 <div class="pillar">
 <h3>Mathematics</h3>
-<p>Logical reasoning and analytical skills.</p>
+<p>Logical and analytical thinking.</p>
 </div>
 
 </div>
@@ -418,7 +406,41 @@ STEM Pillars
 
 </section>
 
-<!-- OFFICERS -->
+<section id="projects">
+
+<div class="container">
+
+<h2 class="section-title">
+Projects
+</h2>
+
+<div class="grid">
+
+<div class="project-card">
+<h3>AuthenCheck</h3>
+<p>Plagiarism & AI Detection Tool designed to promote academic integrity.</p>
+</div>
+
+<div class="project-card">
+<h3>CalcuLend</h3>
+<p>A STEM-focused computational and educational utility platform.</p>
+</div>
+
+<div class="project-card">
+<h3>SynapSHARE</h3>
+<p>A collaborative platform for sharing resources, research, and learning materials.</p>
+</div>
+
+<div class="project-card">
+<h3>TukLabs</h3>
+<p>A project-based STEM laboratory initiative promoting experimentation and innovation.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <section id="officers">
 
@@ -428,7 +450,7 @@ STEM Pillars
 Leadership Team
 </h2>
 
-<div class="officers">
+<div class="grid">
 
 <div class="officer-card">
 <h3>Club Advisers</h3>
@@ -467,68 +489,26 @@ Leadership Team
 
 </section>
 
-<!-- RESEARCH -->
-
-<section id="research">
-
-<div class="container">
-
-<h2 class="section-title">
-Research & Innovation
-</h2>
-
-<div class="research-grid">
-
-<div class="research-card">
-<h3>Scientific Investigatory Projects</h3>
-<p>
-Encouraging students to conduct meaningful research that addresses real-world problems.
-</p>
-</div>
-
-<div class="research-card">
-<h3>Innovation Initiatives</h3>
-<p>
-Developing creative solutions through science, technology, and engineering.
-</p>
-</div>
-
-<div class="research-card">
-<h3>Research Competitions</h3>
-<p>
-Participating in school, division, regional, and national STEM events.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- JOIN -->
-
 <section>
 
 <div class="container">
 
 <h2 class="section-title">
-Become a Synapse
+Gallery
 </h2>
 
-<div class="card">
+<div class="gallery-grid">
 
-<p style="text-align:center;">
-Join a growing community of young scientists, innovators, researchers, and future leaders dedicated to making a difference through STEM.
-</p>
+<div class="gallery-item">Research Activities</div>
+<div class="gallery-item">Science Fairs</div>
+<div class="gallery-item">Club Events</div>
+<div class="gallery-item">Community Outreach</div>
 
 </div>
 
 </div>
 
 </section>
-
-<!-- CONTACT -->
 
 <section id="contact">
 
@@ -539,12 +519,8 @@ Contact Us
 </h2>
 
 <p>
-Facebook Page:
-</p>
-
-<p>
 <a href="https://web.facebook.com/STEM.TNTS?_rdc=1&_rdr#" target="_blank">
-Synapses STEM Club
+Synapses STEM Club Facebook Page
 </a>
 </p>
 
