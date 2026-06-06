@@ -8,99 +8,34 @@
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
 body{
-background:#0B1020;
-color:white;
-}
-
-nav{
-position:fixed;
-top:0;
-width:100%;
-padding:20px 50px;
-display:flex;
-justify-content:space-between;
-background:rgba(0,0,0,.7);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-nav ul{
-display:flex;
-gap:20px;
-list-style:none;
-}
-
-nav a{
-color:white;
-text-decoration:none;
+    margin:0;
+    background:#0B1020;
+    color:white;
+    font-family:Segoe UI, sans-serif;
+    text-align:center;
 }
 
 .hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
-.hero h1{
-font-size:5rem;
+.logo{
+    width:220px;
+    margin-bottom:20px;
 }
 
-.hero p{
-margin-top:10px;
-font-size:1.5rem;
+h1{
+    font-size:4rem;
+    margin:0;
 }
 
-.btn{
-background:#C1121F;
-padding:15px 30px;
-margin-top:20px;
-border-radius:10px;
-text-decoration:none;
-color:white;
-}
-
-section{
-padding:100px 10%;
-}
-
-.title{
-text-align:center;
-margin-bottom:50px;
-font-size:2.5rem;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#151D34;
-padding:25px;
-border-radius:15px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#060A15;
+p{
+    font-size:1.5rem;
 }
 
 </style>
@@ -109,152 +44,15 @@ background:#060A15;
 
 <body>
 
-<nav>
+<div class="hero">
 
-<h2>STEM Synapses</h2>
+    <img src="logo.png" class="logo" alt="STEM Synapses Logo">
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#officers">Officers</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#join">Join</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+    <h1>STEM SYNAPSES</h1>
 
-</nav>
-
-<section class="hero">
-
-<h1>STEM SYNAPSES</h1>
-
-<p>Synapses Firing, Minds Inspiring</p>
-
-<a href="#about" class="btn">
-Explore
-</a>
-
-</section>
-
-<section id="about">
-
-<h2 class="title">About Us</h2>
-
-<div class="card">
-
-<p>
-
-STEM Synapses is a student-led organization
-dedicated to scientific excellence, research,
-innovation, leadership, and community engagement.
-
-</p>
+    <p>Synapses Firing, Minds Inspiring</p>
 
 </div>
-
-</section>
-
-<section id="officers">
-
-<h2 class="title">Organization Officers</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>President</h3>
-<p>Your Name</p>
-</div>
-
-<div class="card">
-<h3>Vice President</h3>
-<p>Your Name</p>
-</div>
-
-<div class="card">
-<h3>Secretary</h3>
-<p>Your Name</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2 class="title">Research Projects</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Project EVRLAST</h3>
-<p>Water Lettuce Rhizofiltration Study</p>
-</div>
-
-<div class="card">
-<h3>Mangrove AgNP Research</h3>
-<p>Green Nanotechnology Project</p>
-</div>
-
-<div class="card">
-<h3>Ethnobotanical Research</h3>
-<p>Traditional Medicinal Plants Study</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="gallery">
-
-<h2 class="title">Gallery</h2>
-
-<div class="cards">
-
-<div class="card">Science Fair</div>
-<div class="card">Research Presentation</div>
-<div class="card">Community Outreach</div>
-
-</div>
-
-</section>
-
-<section id="join">
-
-<h2 class="title">Join Us</h2>
-
-<div class="card">
-
-<p>
-
-Become part of a growing community of
-future scientists, innovators, and leaders.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2 class="title">Contact</h2>
-
-<div class="card">
-
-<p>Email: stemsynapses@gmail.com</p>
-<p>Facebook: STEM Synapses</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-© STEM Synapses
-</p>
-
-</footer>
 
 </body>
 </html>
